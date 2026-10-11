@@ -37,6 +37,8 @@ npx skills update
 
 > 使用 $phylab-report，先计划本次实验报告，列出需要的数据和处理方法。
 
+> 使用 $phylab-report，根据本次课件和预习模板完成预习报告 Typst，写好实验综述、重点和难点，核对各栏字数，不导出 PDF。
+
 > 使用 $phylab-report，完成不依赖实验数据的部分，生成正式报告的 Typst 文件，数据和结果留空，不导出 PDF。
 
 > 使用 $phylab-report，根据本次原始记录完成数据处理、软件作图和误差分析，补入报告，仍不导出 PDF。
@@ -54,11 +56,13 @@ skills/phylab-report/
 ├── SKILL.md
 ├── agents/openai.yaml
 └── references/
+    ├── prelab.md
     ├── project-conventions.md
     └── uncertainty.md
 ```
 
 - [SKILL.md](skills/phylab-report/SKILL.md)：任务范围、数据与照片核对、自然写作及交付规则。
+- [prelab.md](skills/phylab-report/references/prelab.md)：预习模板、综述／重点／难点写法、实验前视角及字数检查。
 - [project-conventions.md](skills/phylab-report/references/project-conventions.md)：可调整的目录、Typst 排版和命名起点。
 - [uncertainty.md](skills/phylab-report/references/uncertainty.md)：不确定度、单位、修约和误差解释。
 
