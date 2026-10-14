@@ -47,7 +47,20 @@ npx skills update
 
 > 使用 $phylab-report，按当前项目命名规范导出 PDF，并逐页检查最终排版。
 
-本仓库提供写作与核对方法，不附带课程课件、报告模板、个人实验数据或照片。使用时准备自己的资料；生成报告需要可用的 Typst 环境和中文字体，软件作图需要 Python、NumPy、Matplotlib 或相应工具。封面信息、课程规则、目录和字体按自己的项目调整。
+本仓库提供写作与核对方法，并附带去除个人信息的预习和正式报告 Typst 模板，不附带课程课件、个人实验数据或照片。使用时准备自己的资料；生成报告需要可用的 Typst 环境和中文字体，软件作图需要 Python、NumPy、Matplotlib 或相应工具。封面信息、课程规则、目录和字体按自己的项目调整。
+
+## Typst 模板附件
+
+- [预习报告模板](skills/phylab-report/assets/templates/prelab.typ)
+- [正式报告模板](skills/phylab-report/assets/templates/report.typ)
+
+两个文件均可独立使用，无需原项目的模板目录或封面图片。下载所需文件到自己的项目，修改底部 `#show: phylab.with(...)` 中的封面占位文字和正文栏目。姓名、学号、班级、教师及桌号均为通用占位；日期默认为空，确认后将 `date: none` 改为 `date: datetime(year: ..., month: ..., day: ...)`，再填写时段。
+
+模板保留原有封面、栏目与评分示例，按当前课程要求调整。字体采用 Times New Roman、Songti SC、Heiti SC 和 Menlo；其他系统可替换为已安装字体。标题编号使用 `@preview/numbly:0.1.0`，首次编译需要联网下载该包。只需源文件时可编译 PNG 检查排版，例如：
+
+```bash
+typst compile --format png prelab.typ 'prelab-{p}.png'
+```
 
 ## 文件结构
 
@@ -55,6 +68,9 @@ npx skills update
 skills/phylab-report/
 ├── SKILL.md
 ├── agents/openai.yaml
+├── assets/templates/
+│   ├── prelab.typ
+│   └── report.typ
 └── references/
     ├── prelab.md
     ├── project-conventions.md
