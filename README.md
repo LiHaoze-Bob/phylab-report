@@ -1,12 +1,12 @@
 # PHYLAB-Report
 
-用于中文物理实验预习报告和正式报告的 Agent Skill。根据课程资料和本次原始记录，完成报告计划、Typst 写作、数据处理、软件作图、误差分析、照片与图注核对，以及按需 PDF 导出。
+用于ZJU大物实验预习报告和正式报告的 Agent Skill。根据课程资料和本次原始记录，完成报告计划、Typst 写作、数据处理、软件作图、误差分析、照片与图注核对，以及按需 PDF 导出。
 
 正文采用实验者视角和自然短句，保留测量依据与物理条件，减少重复表达。没有原始数据时不编造结果；默认交付可编辑源文件，明确要求后才导出 PDF。
 
 ## 安装
 
-电脑需要安装 Node.js 和 npm，以便使用 `npx`。在实验项目目录打开终端，运行：
+需要安装 Node.js 和 npm，以便使用 `npx`。在实验项目目录打开终端，运行：
 
 ```bash
 npx skills add LiHaoze-Bob/phylab-report --skill phylab-report
@@ -49,7 +49,7 @@ npx skills update
 
 本仓库提供写作与核对方法，并附带去除个人信息的预习和正式报告 Typst 模板，不附带课程课件、个人实验数据或照片。使用时准备自己的资料；生成报告需要可用的 Typst 环境和中文字体，软件作图需要 Python、NumPy、Matplotlib 或相应工具。封面信息、课程规则、目录和字体按自己的项目调整。
 
-## Typst 模板附件
+## 附件
 
 - [预习报告模板](skills/phylab-report/assets/templates/prelab.typ)
 - [正式报告模板](skills/phylab-report/assets/templates/report.typ)
@@ -82,6 +82,6 @@ skills/phylab-report/
 - [project-conventions.md](skills/phylab-report/references/project-conventions.md)：可调整的目录、Typst 排版和命名起点。
 - [uncertainty.md](skills/phylab-report/references/uncertainty.md)：不确定度、单位、修约和误差解释。
 
-## skills.sh 收录
+## skills.sh
 
-技能源文件托管在本 GitHub 仓库，同学可以直接使用上面的 `npx skills add` 命令安装。[skills.sh 官方 FAQ](https://skills.sh/docs/faq) 说明，用户通过安装工具安装技能后，平台会依据匿名安装统计自动收录和排名；无需另行上传技能包。网站收录的显示时间以平台实际状态为准，安装不依赖榜单上是否已经出现。
+技能源文件托管在本 GitHub 仓库，可以直接使用上面的 `npx skills add` 命令安装。[skills.sh 官方 FAQ](https://skills.sh/docs/faq) 说明，用户通过安装工具安装技能后，平台会依据匿名安装统计自动收录和排名
