@@ -49,6 +49,47 @@ npx skills update
 
 本仓库提供写作与核对方法，并附带去除个人信息的预习和正式报告 Typst 模板，不附带课程课件、个人实验数据或照片。使用时准备自己的资料；生成报告需要可用的 Typst 环境和中文字体，软件作图需要 Python、NumPy、Matplotlib 或相应工具。封面信息、课程规则、目录和字体按自己的项目调整。
 
+## 项目结构参考
+
+```text
+physics-lab/
+├── AGENTS.md                         # 项目规则、技能入口与交付约定
+├── .agents/
+│   └── skills/
+│       └── phylab-report/
+│           ├── SKILL.md              # 报告撰写与核对流程
+│           ├── agents/
+│           │   └── openai.yaml       # 技能显示信息
+│           ├── assets/templates/
+│           │   ├── prelab.typ        # 预习报告模板，无个人信息
+│           │   └── report.typ        # 正式报告模板，无个人信息
+│           └── references/
+│               ├── prelab.md         # 预习报告写作要求
+│               ├── project-conventions.md
+│               └── uncertainty.md    # 不确定度与误差分析
+├── PPT/                              # 实验课件、讲义与教师要求
+├── Template/                         # 项目采用的模板及排版组件
+│   ├── PreviewTemplate/
+│   │   └── phylab.typ
+│   └── ReportTemplate/
+│       └── phylab.typ
+├── data/                             # 原始记录、照片与核对后的读数
+│   ├── 实验名称_measurements.json
+│   └── 实验名称照片/
+├── analysis/                         # 数据处理脚本、计算结果与软件图
+│   ├── 实验名称_analysis.py
+│   ├── 实验名称_results.json
+│   └── figures/
+├── typ/                              # 可编辑的 Typst 报告
+│   ├── 实验名称-预习报告.typ
+│   └── 实验名称-实验报告.typ
+├── preview/                          # 按需导出的预习报告 PDF
+└── report/                           # 按需导出的正式报告 PDF
+```
+
+Agent 从 `AGENTS.md` 获取项目约定，按任务读取 `SKILL.md` 及相关参考文件，结合 `PPT/` 和 `data/` 完成报告。计算过程保存在 `analysis/`，报告源文件保存在 `typ/`
+
+
 ## 附件
 
 - [预习报告模板](skills/phylab-report/assets/templates/prelab.typ)
