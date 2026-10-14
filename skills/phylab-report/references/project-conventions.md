@@ -12,7 +12,7 @@
 | 预习／正式模板 | `Template/PreviewTemplate/`、`Template/ReportTemplate/` |
 | 按需导出的预习／正式 PDF | `preview/`、`report/` |
 
-参考同项目报告时只参考结构、简洁风格和适用脚本；本次读数、参数、身份与元数据独立核对。
+参考同项目报告的结构、简洁风格和适用脚本；封面信息按主技能的询问与沿用规则处理，本次读数和测量参数独立核对。
 
 ## 结构、封面与命名
 
@@ -20,7 +20,7 @@
 
 正式报告原始记录单独分页通常便于核对；其他章节根据实际渲染决定分页，不为没有数据的项目插入编辑说明。
 
-使用项目现有模板。没有模板时，可复制技能附件中的 [预习报告模板](../assets/templates/prelab.typ) 或 [正式报告模板](../assets/templates/report.typ)，两者均为单文件，个人字段为占位文字、日期留空；按当前课程要求填写封面与栏目。若模板函数为 `phylab`，核对 `name`、`instructor`、`class`、`desk-id`、`author`、`author-id`、`date`、`week`、`am-pm`。字段值来自当前报告作者与本次实验；技能不预置个人信息，参考报告的封面不能直接沿用。
+使用项目现有模板。没有模板时，可复制技能附件中的 [预习报告模板](../assets/templates/prelab.typ) 或 [正式报告模板](../assets/templates/report.typ)，两者均为单文件，个人字段为占位文字、日期留空；按当前课程要求填写封面与栏目。若模板函数为 `phylab`，核对 `name`、`instructor`、`class`、`desk-id`、`author`、`author-id`、`date`、`week`、`am-pm`。字段值按主技能“封面信息”的规则询问或沿用，正式报告与对应预习报告保持一致；技能与模板不预置个人信息。
 
 无另行规定时，PDF 使用 `姓名+学号+实验名称+第N周.pdf`，正式报告放 `report/`，预习报告放 `preview/`。例如 `report/姓名+学号+实验名称+第N周.pdf`，各字段替换为当前报告已确认的值；周次不照抄旧文件后缀。
 
