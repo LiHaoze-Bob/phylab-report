@@ -1,4 +1,7 @@
 interface:
   display_name: "PHYLAB-Report"
-  short_description: "编写物理实验预习与正式 Typst 报告，核对栏目、字数、数据与误差，按需导出 PDF"
-  default_prompt: "使用 $phylab-report，根据当前课件、教师要求和任务类型完成简洁自然的预习或正式 Typst 报告；预习核对栏目与字数，正式报告核对本次记录、照片、数据与误差，默认不导出 PDF。"
+  short_description: "编写物理实验 Typst 报告；主动要求时简要审查问题与示例结果差异，按需导出 PDF"
+  default_prompt: "使用 $phylab-report，按我的明确要求撰写、修改或导出物理实验报告；若要求审查，只简要列出问题并比较可用示例的主要结果差异，不修改报告。"
+
+policy:
+  allow_implicit_invocation: false
