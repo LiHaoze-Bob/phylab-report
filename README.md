@@ -125,4 +125,7 @@ skills/phylab-report/
 
 ## skills.sh
 
+技能页面：[PHYLAB-Report](https://www.skills.sh/lihaoze-bob/phylab-report/phylab-report)。
+
 技能源文件托管在本 GitHub 仓库，可以直接使用上面的 `npx skills add` 命令安装。[skills.sh 官方 FAQ](https://skills.sh/docs/faq) 说明，用户通过安装工具安装技能后，平台会依据匿名安装统计自动收录和排名
+
